@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": "Standalone coding agent based on pi-coding-agent",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wxmvv/morn-agent.git"
+  },
   "piConfig": {
     "name": "morn",
     "configDir": ".morn"
