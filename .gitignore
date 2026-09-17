@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.tgz
+coverage/
+.morn/
+.DS_Store
+scripts
+a/
