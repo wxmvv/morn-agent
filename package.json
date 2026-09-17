@@ -1,5 +1,5 @@
 {
-  "name": "morn-agent",
+  "name": "@wxmvv/morn-agent",
   "version": "0.1.0",
   "description": "Standalone coding agent based on pi-coding-agent",
   "type": "module",
@@ -111,5 +111,8 @@
   "license": "MIT",
   "engines": {
     "node": ">=22.19.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

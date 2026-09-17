@@ -169,7 +169,7 @@ export function cleanupManagedInstall(): void {
 }
 
 async function runManagedSelfUpdate(managedRoot: string, version: string): Promise<void> {
-	if (PACKAGE_NAME === "morn-agent" && !process.env.PI_INSTALLER_API_BASE?.trim()) {
+	if (PACKAGE_NAME === "@wxmvv/morn-agent" && !process.env.PI_INSTALLER_API_BASE?.trim()) {
 		throw new Error(`Managed ${APP_NAME} updates require a configured installer source. Install with npm install -g ${PACKAGE_NAME}@latest instead.`);
 	}
 	if (!MANAGED_RELEASE_VERSION_RE.test(version)) {

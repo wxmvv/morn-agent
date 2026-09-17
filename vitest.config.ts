@@ -12,6 +12,7 @@ export default defineConfig({
 	},
 	resolve: {
 		alias: [
+			{ find: "@wxmvv/morn-agent", replacement: fileURLToPath(new URL("./src/index.ts", import.meta.url)) },
 			{ find: "morn-agent", replacement: fileURLToPath(new URL("./src/index.ts", import.meta.url)) },
 			{ find: /^@earendil-works\/pi-coding-agent$/, replacement: fileURLToPath(new URL("./src/index.ts", import.meta.url)) },
 			{ find: /^@mariozechner\/pi-ai\/oauth$/, replacement: "@earendil-works/pi-ai/oauth" },

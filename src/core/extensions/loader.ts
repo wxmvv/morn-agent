@@ -48,6 +48,7 @@ import type {
 
 /** Modules available to extensions via virtualModules (for compiled binaries) */
 const VIRTUAL_MODULES: Record<string, unknown> = {
+	"@wxmvv/morn-agent": _bundledPiCodingAgent,
 	"morn-agent": _bundledPiCodingAgent,
 	typebox: _bundledTypebox,
 	"typebox/compile": _bundledTypeboxCompile,
@@ -111,6 +112,7 @@ function getAliases(): Record<string, string> {
 	const piAiProvidersEntry = resolvePackage("@earendil-works/pi-ai/providers/all");
 
 	_aliases = {
+		"@wxmvv/morn-agent": piCodingAgentEntry,
 		"morn-agent": piCodingAgentEntry,
 		"@earendil-works/pi-coding-agent": piCodingAgentEntry,
 		"@earendil-works/pi-agent-core": piAgentCoreEntry,

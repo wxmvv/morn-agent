@@ -7,7 +7,7 @@
 需要 Node.js >= 22.19.0。
 
 ```bash
-npm i -g morn-agent
+npm i -g @wxmvv/morn-agent
 morn
 ```
 
@@ -19,10 +19,10 @@ morn
 morn update                  # 更新 morn-agent 本体
 morn update --force          # 重新安装 npm latest 版本
 morn update --extensions     # 仅更新扩展
-npm install -g morn-agent@latest # 手动更新
+npm i -g @wxmvv/morn-agent@latest # 手动更新
 ```
 
-启动时从 npm 检查 `morn-agent` 的最新稳定版本，更新命令安装检查到的确切版本。全局安装会使用对应的包管理器；源码或本地链接安装请更新源码并重新构建。更新后重新启动 morn。
+启动时从 npm 检查 `@wxmvv/morn-agent` 的最新稳定版本，更新命令安装检查到的确切版本。全局安装会使用对应的包管理器；源码或本地链接安装请更新源码并重新构建。更新后重新启动 morn。
 
 `MORN_SKIP_VERSION_CHECK=1` 只关闭自动检查，仍可手动运行 `morn update`；离线模式会禁用更新检查。
 
@@ -53,7 +53,7 @@ npm start
 
 `@earendil-works/chord`、`pi-agent-core`、`pi-ai`、`pi-client`、`pi-protocol`、`pi-tui` 和 `pi-server` 均使用 npm 发布的 `0.85.0`；间接依赖由 `package-lock.json` 锁定。无需相邻的 pi-mono checkout，也无需构建其他 workspace。
 
-扩展可以从 `morn-agent` 导入 API。上游扩展的 `@earendil-works/pi-coding-agent` 导入在扩展加载器内仍映射到本项目。SDK 使用 `morn-agent`，RPC 子入口使用 `morn-agent/rpc-entry`。
+扩展可以从 `@wxmvv/morn-agent` 导入 API。上游扩展的 `@earendil-works/pi-coding-agent` 导入在扩展加载器内仍映射到本项目。SDK 使用 `@wxmvv/morn-agent`，RPC 子入口使用 `@wxmvv/morn-agent/rpc-entry`。
 
 Node 构建采用上游已有的 unbundled 产物，运行时由 node_modules 提供依赖。可选的 `npm run build:binary` 需要 Bun。
 
